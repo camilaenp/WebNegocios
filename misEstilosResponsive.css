@@ -38,7 +38,29 @@
   .menu, .main, .right {
     width: 100%;
   }
-  .imagen {
-    max-width:100%;
-    height:auto;}
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: #ffffff; 
+  }
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
 }
