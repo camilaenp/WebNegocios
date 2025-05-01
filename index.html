@@ -21,6 +21,43 @@
             <a href="#">Tienda</a>
             <a href="#">Blog</a>
         </div>
+        <!--Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
 
 <div class="main">
         <!-- Carousel -->
@@ -86,10 +123,10 @@
 
   <div class="container-fluid mt-3">
     <h3>Nuestra oferta:</h3>
-    <p>Dormitorios,salas, comedores complementos</p>
+    <p>Dormitorios,salas, comedores,complementos,decoración y más...</p>
   </div>
         <h2>¿Quienes somos? </h2>  
-        <p>
+        <p class="first-line">
             En Muebles Novoa somos una empresa dedicada a la creación y distribución de muebles de alta calidad,
             diseñados para transformar y darle estilo a tu hogar o espacio comercial. Con más de 20 años de experiencia en el sector,
             nuestra misión es ofrecer productos que combinen funcionalidad, estética y durabilidad,
@@ -97,15 +134,107 @@
         </p> 
     <img class="imagen" src="sala.png">
     </div>
-
     <div class="right">
-        <h2>Promociones</h2>
-        <p>¡Promoción por tiempo limitado!
-            Compra muebles en stock con entrega inmediata y hasta 12 meses sin intereses.
-        </p>
+      <h2>Promociones</h2>
+      <p>¡Promoción por tiempo limitado!
+          Compra muebles en stock con entrega inmediata y hasta 12 meses sin intereses.
+      </p>
 
+  </div>
+    
+
+    
     </div>
-    </div>
+    <form action="/action_page.php">
+    <fieldset>
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd">
+      <legend>Personalia:</legend>
+        <label for="fname">Primer nombre :</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        
+
+        <label for="msg">Mensaje:</label><br>
+        <textarea name="message" rows="10" cols="30"> Escriba aqui su consulta 
+        </textarea>
+        <br>
+        <input type="radio" id="clienteNuevo" name="tipoCliente" value="clienteNuevo">
+        <label for="clienteNuevo">Cliente Nuevo </label><br>
+        <input type="radio" id="clienteAntiguo" name="tipoCliente" value="clienteAntiguo">
+        <label for="clienteAntiguo">Cliente Existente </label><br>
+        <br>
+        <input type="checkbox" id="consulta1" name="consulta" value="consulta1">
+        <label for="consulta1"> Quiero saber precios</label><br>
+        <input type="checkbox" id="consulta2" name="consulta" value="consulta2">
+        <label for="consulta2"> Información general </label><br>
+        <input type="checkbox" id="consulta3" name="consulta" value="consulta3">
+        <label for="consulta3"> Catálogo</label><br>
+        <label for="Provincia">Provincias</label>
+    <select id="provincias" name="provincias">
+      <option value="Azuay">Azuay</option>
+      <option value="Cañar">Cañar</option>
+      <option value="ElOro">El Oro</option>
+      <option value="Loja" selectd >Loja</option>
+    </select> <br> 
+    <label for="Browsers">Browsers</label>
+    <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist><br>
+      <button type="button" onclick="alert('Rellena el formulario antes de enviar!')">Ayuda</button>
+      <input type="submit" value="Enviar">
+  </fieldset>
+      </form> 
+      <!--GALERIA RESPONSIVA-->
+    
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="galeriaImagenes/g1.jpg">
+      <img src="galeriaImagenes/g1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Sala Andra elegante y minimalista </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="galeriaImagenes/g1.jpg">
+      <img src="galeriaImagenes/g1.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Sala Andra elegante y minimalista </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="galeriaImagenes/g1.jpg">
+      <img src="galeriaImagenes/g1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Sala Andra elegante y minimalista </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="galeriaImagenes/g1.jpg">
+      <img src="galeriaImagenes/g1.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Sala Andra elegante y minimalista </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+    
 <!-- Footer -->
 <div style="background-color:#eccaca;padding:20px;margin-top:7px;">
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; text-align:left;">
